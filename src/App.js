@@ -31,17 +31,17 @@ function App() {
 				<Route
 					exact
 					path="/"
-					render={() => (
-						<Products
-							products={products}
-							addItem={addItem}
-						/>
-					)}
+					component={Products}
+				// <Products
+				// 	products={products}
+				// 	addItem={addItem}
+				// />
 				/>
 
 				<Route
 					path="/cart"
-					render={() => <ShoppingCart cart={cart} />}
+					component={ShoppingCart}
+				// render={() => <ShoppingCart cart={cart} />}
 				/>
 			</ProductContext.Provider>
 		</div>
