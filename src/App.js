@@ -16,8 +16,8 @@ function App() {
 	// ? Might need to adjust logic. cart & setCart?
 	const addItem = item => {
 		// add the given item to the cart
-		// // props.addItem(item)
-		setCart = ([...cart, item])
+		// props.addItem(item)
+		setCart([...cart, item]);
 	};
 
 	//? passing cart (state) into Provider
