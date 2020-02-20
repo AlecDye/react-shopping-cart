@@ -9,13 +9,11 @@ import ShoppingCart from './components/ShoppingCart';
 import { ProductContext } from './contexts/ProductContext'
 import { CartContext } from './contexts/CartContext'
 
-// import { data } from './data'
-
 function App() {
 	const [products] = useState(data);
 	const [cart, setCart] = useState([]);
 
-	// // ? Might need to adjust logic. cart & setCart?
+	// ? Might need to adjust logic. cart & setCart?
 	const addItem = item => {
 		// add the given item to the cart
 		// // props.addItem(item)
