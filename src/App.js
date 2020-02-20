@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import { Route } from 'react-router-dom';
 import data from './data';
 
@@ -6,6 +6,11 @@ import data from './data';
 import Navigation from './components/Navigation';
 import Products from './components/Products';
 import ShoppingCart from './components/ShoppingCart';
+
+import { data } from './data';
+
+// Context variable
+const StoreContext = createContext();
 
 function App() {
 	const [products] = useState(data);
